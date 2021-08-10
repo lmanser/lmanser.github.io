@@ -1,17 +1,32 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
 body {
     margin: 60px auto;
     width: 70%;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
+    display: block;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+
+.cv-entry {
+    border: lightseagreen;
+    border-style: groove;
+    padding: 1cm;
+    margin: 1cm;
+    background-color: #F8FBC9;
+    border-radius: 2cm;
+    border-color: teal;
+    text-align: center;
 }
+.cv-entry:hover {
+    background-color:teal;
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
     color: #999;
@@ -21,9 +36,9 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
+    text-align: left;
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
@@ -40,4 +55,9 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+.experience {
+    font-weight: 500;
+    text-align: left;
 }
