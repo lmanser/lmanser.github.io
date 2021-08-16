@@ -8,7 +8,7 @@ body {
 
 .sidenav {
     height: 100%;
-    width: 160px;
+    width: 180px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -39,7 +39,10 @@ nav ul, footer ul {
 .cv-entry {
     border-style: solid;
     padding: 1cm;
-    margin: 1cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-right: 0cm;
+    margin-left: 1.5cm;
     background-color: #dddddd;
     border-radius: 0.5cm;
     border-color: rgb(65, 65, 65);
