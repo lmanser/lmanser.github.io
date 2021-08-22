@@ -10,7 +10,14 @@
 </head>
 
 <body>
-	<div class="sidenav">
+	<span class="menu" onclick="openNav()">
+		<svg height="10%" width="10%" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+		</svg>
+	</span>
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="/index.html">Home</a>
 		<a href="/about.html">Über mich</a>
 		<a href="/cv.html">Lebenslauf</a>
@@ -21,6 +28,13 @@
 			</div>
 
 			<p>Zuverlässig, Neugierig, Engagiert</a></p>
+
+			<h2>Zu meiner Person</h2>
+			<ul>
+				<li>Geburtstag: 03.01.1992</li>
+				<li>Nationalität: CH & LI</li>
+				<li>Wohnort: 9000, St. Gallen</li>
+			</ul>
 
 			<h2>Sprachen</h2>
 			<ul>
@@ -45,5 +59,17 @@
 		</div>
 	</div>
 </body>
+
+<script>
+	/* Open the sidenav */
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "100%";
+	}
+
+	/* Close/hide the sidenav */
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+	}
+</script>
 
 </html>

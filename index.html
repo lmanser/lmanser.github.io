@@ -11,7 +11,14 @@
 </head>
 
 <body>
-	<div class="sidenav">
+	<span class="menu" onclick="openNav()">
+		<svg width="10%" height="10%" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+			xmlns="http://www.w3.org/2000/svg">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+		</svg>
+	</span>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="/index.html">Home</a>
 		<a href="/about.html">Über mich</a>
 		<a href="/cv.html">Lebenslauf</a>
@@ -19,9 +26,22 @@
 	<div class="container">
 		<div class="blurb">
 			<h1>Linus Manser</h1>
-			<p>Vielen Dank für ihr Interesse.</p>
+			<p>Vielen Dank für ihr <strong onclick="openNav()" style="cursor: pointer;">Interesse</strong>.</p>
+			
 		</div>
 	</div>
 </body>
+
+<script>
+	/* Open the sidenav */
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "100%";
+	}
+
+	/* Close/hide the sidenav */
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+	}
+</script>
 
 </html>
